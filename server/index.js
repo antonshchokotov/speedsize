@@ -1,4 +1,6 @@
 const { Server } = require("socket.io");
+const PORT = process.env.PORT || 8080;
+
 const io = new Server({
   cors: {
     origin: "*",
@@ -70,4 +72,4 @@ io.on("connection", (socket) => {
   });
 });
 
-io.listen(3050);
+io.listen(PORT);
