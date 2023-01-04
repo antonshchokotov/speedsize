@@ -1,7 +1,7 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import { io } from "socket.io-client";
-const socket = io("ws://speedsize-server.onrender.com");
+const socket = io("wss://speedsize-server.onrender.com");
 
 function App() {
   const [error, setError] = useState(null);
